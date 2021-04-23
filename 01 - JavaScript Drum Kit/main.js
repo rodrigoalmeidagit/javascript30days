@@ -1,5 +1,5 @@
-(function () {
-  
+(function (win, doc) {
+
   'use strict';
 
   function removeTransition(e) {
@@ -21,4 +21,4 @@
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
 
-})();
+})(window, document);
